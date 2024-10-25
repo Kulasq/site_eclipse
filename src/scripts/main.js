@@ -1,3 +1,5 @@
+AOS.init();
+
 // Definindo a data do próximo eclipse solar total no Brasil
 const eclipseDate = new Date('August 12, 2045 15:58:00').getTime();
 
@@ -8,7 +10,7 @@ function updateCountdown() {
 
     // Cálculo total em milissegundos para facilitar as conversões
     const msInYear = 1000 * 60 * 60 * 24 * 365.25; // Milissegundos em um ano (considera anos bissextos)
-    const msInMonth = 1000 * 60 * 60 * 24 * 30.44; // Milissegundos em um mês médio (30,44 dias por mês)
+    const msInMonth = 1000 * 60 * 60 * 24 * 30.4375; // Milissegundos em um mês médio (30,44 dias por mês)
     const msInDay = 1000 * 60 * 60 * 24;
     const msInHour = 1000 * 60 * 60;
     const msInMinute = 1000 * 60;
@@ -22,12 +24,14 @@ function updateCountdown() {
     const seconds = Math.floor((timeRemaining % msInMinute) / 1000);
 
     // Atualizando os elementos HTML com os valores da contagem regressiva
-    document.getElementById('years').innerHTML = years;
-    document.getElementById('months').innerHTML = months;
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('minutes').innerHTML = minutes;
-    document.getElementById('seconds').innerHTML = seconds;
+    // document.getElementById('years').innerHTML = years;
+    // document.getElementById('months').innerHTML = months;
+    // document.getElementById('days').innerHTML = days;
+    // document.getElementById('hours').innerHTML = hours;
+    // document.getElementById('minutes').innerHTML = minutes;
+    // document.getElementById('seconds').innerHTML = seconds;
+
+    document.getElementById('countdown').innerHTML = `${years} anos ${months} meses ${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos`
 
     // Verifica se a contagem acabou (tempo negativo)
     if (timeRemaining < 0) {

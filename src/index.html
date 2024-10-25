@@ -8,17 +8,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img src="./images/logo.png" alt="Eclipse" class="hero__logo">
             <p class="hero__text">
-                O eclipse solar total começa em 24a 50d 12h 14m 12s
+                O eclipse solar total começa em <span id="countdown"></span>
             </p>
         </div>
     </header>
 
+    <section class="event event--local">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Onde será visível?</h2>
+                <p class="event__details__description">
+                    No Brasil, este evento será visível em partes do Norte e Nordeste. Ele começará a ser visto no Amapá às 15h58m, passando pelos estados do Pará, Maranhão, Piauí, Ceará, Rio Grande do Norte, Paraíba, e terminando na costa de Pernambuco por volta das 16h20m.
+                </p>
+            </div>
+            <img class="event__image" src="./images/onde_ver.png" alt="Eclipse 2024 Locais">
+        </div>
+    </section>
+    <section class="event event--como-observar event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Como observar com segurança?</h2>
+                <p class="event__details__description">
+                    É preciso evitar olhar diretamente para o Sol e tomar alguns cuidados, como: usar filtros adequados (óculos de eclipse ou filtros de soldador com classificação 14 ou superior), não use instrumentos improvisados. A exposição ao Sol, mesmo que durante poucos segundos, pode danificar a retina de modo irreversível.
+                </p>
+            </div>
+            <img class="event__image" src="./images/como_observar.png" alt="luneta">
+        </div>
+    </section>
+    <section class="event event--o-que-e">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Como acontece?</h2>
+                <p class="event__details__description">
+                    Um eclipse solar é um fenômeno astronômico que ocorre quando a Lua se posiciona entre a Terra e o Sol, bloqueando a luz solar de forma total ou parcial. A Lua projeta sua sombra sobre a Terra, que pode ser vista de uma pequena região do planeta. E o eclipse pode ocorrer de forma total, parcial ou anular.
+                </p>
+            </div>
+            <img class="event__image" src="./images/como_acontece.png" alt="eclipse png">
+        </div>
+    </section>
+    <section class="event event--energia event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Energia cósmica</h2>
+                <p class="event__details__description">
+                    De acordo com a astrologia, os eclipses solares podem ativar energias externas e trazer consciência sobre emoções obscuras. Alguns acreditam que os eclipses podem ser um momento para mobilizar energias, energizar cristais, fazer desejos amorosos e melhorar as relações.
+                </p>
+            </div>
+            <img class="event__image" src="./images/energia_cosmica.png" alt="chakras eclipse">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

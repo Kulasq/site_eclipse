@@ -9,6 +9,10 @@
 
     .container {
         position: relative;
+        // max-width: 100%;
+        // overflow-x: hidden;
+        // margin: 0 auto;
+        // padding: 0 16px;
     }
 
     &::before {
@@ -29,6 +33,7 @@
         line-height: 56px;
         font-weight: 800;
         text-align: center;
+        // padding: 0 16px;
     }
 
     &__logo {
@@ -38,7 +43,7 @@
     }
 
     @media (max-width: 640px) {
-        padding: 40px 0;
+        // padding: 40px 0;
 
         &__logo {
             height: 50px;
@@ -48,6 +53,6 @@
             font-size: 22px;
             line-height: 24px;
             margin: 24px 0;
-        }
+            }
     }
 }
